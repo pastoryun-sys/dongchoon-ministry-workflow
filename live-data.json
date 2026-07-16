@@ -1,0 +1,126 @@
+{
+  "checkedAt": "2026-07-17T06:05:00+09:00",
+  "date": "2026-07-17",
+  "flow": {
+    "capabilities": [
+      "프로필 조회",
+      "내 업무 조회",
+      "프로젝트 조회",
+      "게시물 원문 조회"
+    ],
+    "items": [
+      {
+        "category": "장례",
+        "title": "개인정보 보호를 위해 대상 비공개",
+        "detail": "당일 긴급 돌봄 일정 예시",
+        "source": "Flow 장례 프로젝트",
+        "url": "https://flow.team",
+        "priority": "P0"
+      }
+    ],
+    "emptySources": [
+      "전체공지",
+      "동춘 예배현황·피드백",
+      "주보",
+      "일일보고서"
+    ]
+  },
+  "calendar": {
+    "items": [
+      {
+        "time": "07:30–08:30",
+        "title": "외부 미팅 일정 예시",
+        "url": "#"
+      }
+    ]
+  },
+  "gmail": {
+    "query": "최근 3일 · 읽지 않음 · 프로모션/소셜 제외",
+    "items": [
+      {
+        "time": "05:06",
+        "from": "Gmail",
+        "subject": "보안 알림 예시",
+        "summary": "계정 접근 내역 확인",
+        "verdict": "공개용 예시 데이터",
+        "verdictStatus": "confirmed",
+        "important": true,
+        "url": "#"
+      },
+      {
+        "time": "04:29",
+        "from": "Gmail",
+        "subject": "일정 요청 예시",
+        "summary": "확인이 필요한 일정 요청",
+        "verdict": "공개용 예시 데이터",
+        "verdictStatus": "confirmed",
+        "important": false,
+        "url": "#"
+      }
+    ]
+  },
+  "schedule": [
+    {
+      "time": "06:10–06:25",
+      "type": "제안",
+      "title": "보안 활동 확인",
+      "source": "Gmail 알림"
+    },
+    {
+      "time": "06:25–07:00",
+      "type": "제안",
+      "title": "긴급 돌봄 상황 확인",
+      "source": "Flow P0"
+    },
+    {
+      "time": "07:30–08:30",
+      "type": "확정",
+      "title": "외부 미팅 일정 예시",
+      "source": "Google Calendar"
+    },
+    {
+      "time": "08:30–09:00",
+      "type": "제안",
+      "title": "미팅 후 기록 및 후속조치 정리",
+      "source": "확정 일정 후속"
+    },
+    {
+      "time": "09:00 이후",
+      "type": "미정",
+      "title": "확인된 일정 없음",
+      "source": "오늘 일정 조회 결과"
+    }
+  ],
+  "todos": [
+    {
+      "priority": "P0",
+      "title": "긴급 돌봄 대응 확인",
+      "detail": "Flow 원문을 기준으로 연락·담당 확인",
+      "source": "Flow"
+    },
+    {
+      "priority": "P1",
+      "title": "계정 접근 내역 확인",
+      "detail": "연결된 계정의 보안 활동 최종 확인",
+      "source": "Gmail"
+    },
+    {
+      "priority": "P1",
+      "title": "07:30 일정 준비",
+      "detail": "외부 미팅 전 필요한 자료 확인",
+      "source": "Google Calendar"
+    },
+    {
+      "priority": "P1",
+      "title": "미팅 후 실행 항목 기록",
+      "detail": "결정사항·담당·기한을 간단히 정리",
+      "source": "Calendar 후속"
+    },
+    {
+      "priority": "P2",
+      "title": "Flow 오후 재점검",
+      "detail": "예배현황·주보·전체공지의 당일 변경 여부 확인",
+      "source": "Flow"
+    }
+  ]
+}

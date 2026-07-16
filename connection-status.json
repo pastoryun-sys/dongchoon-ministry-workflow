@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-07-17T06:00:30+09:00",
+  "connections": [
+    {
+      "id": "gmail",
+      "name": "Gmail",
+      "account": "공개용 예시 계정",
+      "status": "connected",
+      "label": "연결됨",
+      "mode": "읽기 전용",
+      "capability": "메일 검색·내용 확인"
+    },
+    {
+      "id": "calendar",
+      "name": "Google Calendar",
+      "account": "공개용 예시 계정",
+      "status": "connected",
+      "label": "연결됨",
+      "mode": "읽기 전용",
+      "capability": "일정 검색·상세 확인"
+    },
+    {
+      "id": "flow",
+      "name": "Flow",
+      "account": "공개용 예시 계정",
+      "status": "connected",
+      "label": "연결됨",
+      "mode": "읽기 전용",
+      "capability": "프로필·업무·프로젝트·원문 조회"
+    }
+  ]
+}

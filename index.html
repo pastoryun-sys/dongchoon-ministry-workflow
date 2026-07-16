@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="설교 준비, 교회 운영, AI 자동화를 하나의 흐름으로 살펴보는 목회 워크플로우 초안" />
+  <link rel="icon" href="data:," />
+  <title>동춘교회 목회 워크플로우</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="동춘교회 목회 워크플로우 처음으로"><img src="assets/dongchoon-logo.png" alt="동춘교회" /><small>목회 워크플로우</small></a>
+    <nav aria-label="주요 메뉴">
+      <a class="nav-link active" href="#workflow">전체 흐름</a>
+      <button class="nav-link" data-domain="sermon">설교 준비</button>
+      <button class="nav-link" data-domain="operations">교회 운영</button>
+      <button class="nav-link" data-domain="automation">AI 자동화</button>
+    </nav>
+    <span class="header-note">공개 예시본</span>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <h1 id="hero-title">말씀에서 사역까지,<br /> 한 흐름으로</h1>
+        <p>설교 준비부터 교회 운영, 반복 업무 자동화까지 연결해<br />더 깊이 있는 목회와 성도 돌봄에 집중합니다.</p>
+        <a class="primary-button" href="#workflow">워크플로우 살펴보기 <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="journey" aria-label="목회 업무의 세 단계">
+      <button class="journey-step active" data-domain="sermon">
+        <span class="step-number">1</span>
+        <span><strong>설교 준비</strong><small>말씀을 깊이 묵상하고 설교로 준비</small></span>
+      </button>
+      <span class="connector" aria-hidden="true"></span>
+      <button class="journey-step" data-domain="operations">
+        <span class="step-number">2</span>
+        <span><strong>교회 운영</strong><small>교인 돌봄과 교회 행정을 체계적으로</small></span>
+      </button>
+      <span class="connector" aria-hidden="true"></span>
+      <button class="journey-step" data-domain="automation">
+        <span class="step-number">3</span>
+        <span><strong>AI 자동화</strong><small>반복 업무를 줄이고 시간을 확보</small></span>
+      </button>
+    </section>
+
+    <section class="workspace" id="workflow" aria-live="polite">
+      <aside class="domain-list" aria-label="업무 영역 선택">
+        <button class="domain-button active" data-domain="sermon">
+          <span class="domain-icon" aria-hidden="true">✎</span>
+          <span><strong>설교 준비</strong><small>본문에서 검증된 설교문까지</small></span>
+          <span aria-hidden="true">›</span>
+        </button>
+        <button class="domain-button" data-domain="operations">
+          <span class="domain-icon" aria-hidden="true">◎</span>
+          <span><strong>교회 운영</strong><small>일정, 돌봄, 보고를 한곳에서</small></span>
+          <span aria-hidden="true">›</span>
+        </button>
+        <button class="domain-button" data-domain="automation">
+          <span class="domain-icon" aria-hidden="true">✦</span>
+          <span><strong>AI 자동화</strong><small>매일 반복되는 확인 업무를 자동으로</small></span>
+          <span aria-hidden="true">›</span>
+        </button>
+      </aside>
+
+      <div class="detail-panel">
+        <div class="detail-header">
+          <div><h2 id="domain-title">설교 준비</h2><p id="domain-description"></p></div>
+          <div class="progress-wrap" aria-label="현재 진행 상태">
+            <span>전체 진행도</span><div class="progress-track"><span id="progress-bar"></span></div><strong id="progress-label"></strong>
+          </div>
+        </div>
+        <div class="detail-grid">
+          <ol class="steps" id="steps"></ol>
+          <article class="preview">
+            <span class="preview-label">예시 결과 미리보기</span>
+            <div id="preview-content"></div>
+            <div class="preview-actions">
+              <button class="primary-button compact" id="next-step">다음 단계로 이동 <span aria-hidden="true">→</span></button>
+              <button class="secondary-button" id="reset-flow">처음부터 보기</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="connections" aria-labelledby="connections-title">
+      <div class="connections-heading">
+        <div><h2 id="connections-title">연결된 사역 도구</h2><p>공개 예시에서는 개인정보 없이 연결 구조만 보여드립니다.</p></div>
+        <time id="connection-checked-at"></time>
+      </div>
+      <div class="connection-list" id="connection-list" aria-live="polite"></div>
+    </section>
+
+    <section class="live-briefing" aria-labelledby="briefing-title">
+      <div class="briefing-heading">
+        <div><h2 id="briefing-title">오늘의 통합 브리핑</h2><p>2026년 7월 17일 · 개인정보를 제거한 공개 예시 데이터</p></div>
+        <span>공개 예시 화면</span>
+      </div>
+      <div class="priority-alert" id="priority-alert"></div>
+      <div class="briefing-columns" id="briefing-columns" aria-live="polite"></div>
+      <div class="day-plans">
+        <article class="schedule-panel"><h3>오늘 일정표</h3><p>확정 일정과 제안 시간 블록을 구분했습니다.</p><div id="schedule-table"></div></article>
+        <article class="todo-panel"><h3>오늘의 TO DO LIST</h3><p>공개 예시 데이터에 근거해 우선순위 순으로 정리했습니다.</p><ol id="todo-list"></ol></article>
+      </div>
+      <section class="archive-panel" aria-labelledby="archive-title">
+        <div class="archive-heading">
+          <div><h3 id="archive-title">완료 보관함</h3><p>30일 후 정리된 완료 항목을 다시 확인할 수 있습니다.</p></div>
+          <div class="archive-tools">
+            <input id="archive-search" type="search" aria-label="완료 보관함 검색" placeholder="완료 항목 검색">
+            <label class="archive-date"><span>시작일</span><input id="archive-from" type="date" aria-label="보관 시작일"></label>
+            <label class="archive-date"><span>종료일</span><input id="archive-to" type="date" aria-label="보관 종료일"></label>
+            <div class="archive-actions"><span id="archive-count">0건</span><a href="todo-archive.json" target="_blank">보관 데이터 열기 →</a></div>
+          </div>
+        </div>
+        <div id="archive-list" aria-live="polite"></div>
+      </section>
+    </section>
+
+    <section class="week" aria-labelledby="week-title">
+      <div class="section-heading"><div><h2 id="week-title">이번 주 예시</h2><p>각 영역의 실제 활용 모습을 간단히 살펴보세요.</p></div><span id="week-domain-label">전체 보기</span></div>
+      <div class="week-columns" id="week-list"></div>
+    </section>
+  </main>
+
+  <footer><p>동춘교회 목회 워크플로우 · 공개 예시본</p><p>읽기 전용 연결 상태이며 공개 예시본입니다.</p></footer>
+  <script src="app.js"></script>
+</body>
+</html>
