@@ -1,0 +1,9 @@
+{
+  "name": "동춘교회 목회 워크플로우",
+  "short_name": "동춘 워크플로우",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0b214a",
+  "lang": "ko-KR"
+}
